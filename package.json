@@ -3,7 +3,7 @@
   "name": "Test",
   "description": "Test",
   "version": "0.0.1",
-  "main": "bot.js", WoD-Bot-v2
+  "main": "bot.js",  wod-bot-v2
   "scripts": {
     "start": "node bot.js"
   },
