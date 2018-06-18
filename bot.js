@@ -6,13 +6,13 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'Ping') {
+    if (message.content === '!Ping') {
     	message.reply('pong');
   	}
 });
 client.on('message', message => {
     if (message.content === 'Hello') {
-    	message.reply('hello there, I am the Wings of Dut Bot ');
+    	message.reply('hello there, I am the Wings of Duty Bot ');
   	}
 });
 // THIS  MUST  BE  THIS  WAY
