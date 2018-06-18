@@ -6,12 +6,12 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!Ping') {
+    if (message.content === '!ping') {
     	message.reply('pong');
   	}
 });
 client.on('message', message => {
-    if (message.content === 'Hello') {
+    if (message.content === '!hello') {
     	message.reply('hello there, I am the Wings of Duty Bot ');
   	}
 });
