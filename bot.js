@@ -6,13 +6,18 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!ping') {
+    if (message.content === 'Ping') {
     	message.reply('pong');
   	}
 });
 client.on('message', message => {
-    if (message.content === '!hello') {
+    if (message.content === 'Hello') {
     	message.reply('hello there, I am the Wings of Duty Bot ');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'Info') {
+    	message.reply('Welcome to Wings of Duty Bot (v2), this is a custom bot made by embedded for the wings of duty server and is in its early beta stages. This means few commands may work and bugs may appear ');
   	}
 });
 // THIS  MUST  BE  THIS  WAY
@@ -96,7 +101,7 @@ client.on("message", async message => {
     // This command must be limited to mods and admins. In this example we just hardcode the role names.
     // Please read on Array.some() to understand this bit: 
     // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some?
-    if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Admin", "Mod"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to use this!");
     
     // Let's first check if we have a member and if we can kick them!
@@ -123,7 +128,7 @@ client.on("message", async message => {
   if(command === "ban") {
     // Most of this command is identical to kick, except that here we'll only let admins do it.
     // In the real world mods could ban too, but this is just an example, right? ;)
-    if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Admin"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to use this!");
     
     let member = message.mentions.members.first();
