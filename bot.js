@@ -17,7 +17,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Info') {
-    	message.reply('Welcome to Wings of Duty Bot (v2), this is a custom bot made by embedded for the wings of duty server and is in its early beta stages. This means few commands may work and bugs may appear ');
+    	message.reply('Welcome to Wings of Duty Bot (v3), this is a custom bot made by embedded for the wings of duty server and is in its early beta stages. This means few commands may work and bugs may appear ');
   	}
 });
 // THIS  MUST  BE  THIS  WAY
