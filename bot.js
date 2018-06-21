@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'Ping') {
-    	message.reply('pong');
+    	message.reply('WOD Bot has responded, unlike WOD Support');
   	}
 });
 client.on('message', message => {
