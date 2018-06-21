@@ -4,12 +4,12 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
-
 client.on('message', message => {
     if (message.content === 'Ping') {
-    	message.reply('WOD Bot has responded, unlike WOD Support');
+    	message.reply('WOD Bot has responded');
   	}
 });
+
 client.on('message', message => {
     if (message.content === 'Hello') {
     	message.reply('hello there, I am the Wings of Duty Bot ');
@@ -26,6 +26,12 @@ client.on('message', message => {
     	message.reply('Thank you for contacting support. The following commands may help, Ping, Hello, Info, Help, ');
   	}
 });
+client.on('message', message => {
+    if (message.content === 'manu') {
+    	message.reply('OP');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 
