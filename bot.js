@@ -31,6 +31,10 @@ client.on('message', message => {
     	message.reply('OP');
   	}
 });
+client.on('Message', function(message) {
+        client.sendMessage(message.author, "WODBOT sent you a message!");
+});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
