@@ -31,10 +31,9 @@ client.on('message', message => {
     	message.reply('OP');
   	}
 });
-client.on('Message', message => {
-    if (message.content === 'Test') {
-        client.sendMessage(message.author, 'WODBOT sent you a message!');
-    }
+
+client.on('message', function(hi) {
+        client.sendMessage(message.author, "Hello!");
 });
 
 
