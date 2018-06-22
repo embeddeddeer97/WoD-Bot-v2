@@ -27,7 +27,7 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
-    if (message.content === 'Manyo') {
+    if (message.content === 'Manuyo') {
     	message.reply('OP');
   	}
 });
