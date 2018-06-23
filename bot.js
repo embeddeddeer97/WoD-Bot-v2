@@ -30,7 +30,7 @@ client.on('message', message => {
     if (message.content === 'Manuyo') {
     	message.reply('OP');
   	}
-
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
