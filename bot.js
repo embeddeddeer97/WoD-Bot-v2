@@ -31,9 +31,7 @@ client.on('message', message => {
     	message.reply('OP');
   	}
 });
-client.on('ready', () => {
-        client.setStatus('online', 'WOD Bot Beta');
-});
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
