@@ -30,11 +30,6 @@ client.on('message', message => {
     if (message.content === 'Manuyo') {
     	message.reply('OP');
   	}
-});
-
-client.on('message', function(hi) {
-        client.sendMessage(message.author, "Hello!");
-});
 
 
 // THIS  MUST  BE  THIS  WAY
