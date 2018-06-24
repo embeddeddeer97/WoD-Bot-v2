@@ -48,17 +48,6 @@ let myRole = message.guild.roles.find("name", "Admin");
 //prefix test
 
 
-const commando = require('discord.js-commando');
-const prefix = "1";
-const bot = new commando.Client({
-    commandPrefix: prefix
-});
-
-bot.registry.registerGroup('random', 'Random');
-bot.registry.registerCommandsIn(__dirname + "/commands");
-
-bot.login('Botcode'
-);
 
 
 
