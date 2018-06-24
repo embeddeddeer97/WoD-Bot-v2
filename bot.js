@@ -45,10 +45,7 @@ let myRole = message.guild.roles.get("264410914592129025");
 // get role by name
 let myRole = message.guild.roles.find("name", "Admin");
 
-//prefix test
-    const bot = new commando.Client({
-    commandPrefix: '-'
-    });
+
 
 
 
