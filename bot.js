@@ -39,8 +39,6 @@ client.login(process.env.BOT_TOKEN);
 
 //roles
 
-// get role by name
-let myRole1 = message.guild.roles.find("name", "Admin");
 
 
 
