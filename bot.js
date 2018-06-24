@@ -43,7 +43,7 @@ let myRole1 = message.guild.roles.get("264410914592129025");
 //roles
 
 // get role by name
-let myRole = message.guild.roles.find("name", "Admin");
+let myRole1 = message.guild.roles.find("name", "Admin");
 
 
 
