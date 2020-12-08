@@ -12,12 +12,12 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'Hello') {
-    	message.reply('hello there, I am the Wings of Duty Bot ');
+    	message.reply('Hello there, I am the Gunship Sequel bot, please type "Help" for a list of commands ');
   	}
 });
 client.on('message', message => {
     if (message.content === 'Info') {
-    	message.reply('Welcome to Wings of Duty Bot (v3), this is a custom bot made by embedded for the wings of duty server and is in its early beta stages. This means few commands may work and bugs may appear ');
+    	message.reply('Welcome to Wings of Duty Bot (v3), this is a custom bot made by Embedded for the wings of duty server and is in its early beta stages. This means few commands may work and bugs may appear ');
   	}
 });
 
